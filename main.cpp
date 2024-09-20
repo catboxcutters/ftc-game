@@ -57,11 +57,6 @@ int main() {
     // getCollectiblesCount() -> returns the total number of collectibles remaining on the field
 
 
-    std::cout << "Initial distance to obstacle: " << robot.distanceToObstacle() << std::endl;
-    while (robot.distanceToObstacle() > 0)
-        robot.moveForward();
-    std::cout << robot.getCollectiblesCount()<<' '<<robot.isObjectiveNearby(2);
-
 
     saveFieldToString(field, finalField);
     std::cout << "INITIAL_FIELD\n" << initialField << "FINAL_FIELD\n" << finalField;
